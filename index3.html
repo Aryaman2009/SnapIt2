@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Snap It</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body background="images.jpg" style="background-position: center; ">
+  <center>
+  <h1 id="h" class="btn btn-info">Welcome To SnapIt</h1>
+  <br><br>
+  <label class="btn btn-danger">Note: <span id="s1">User can click the picture of only one person</span></label>
+  <br><br>
+  <div id="canvas" style="height: 350px;">
+
+  </div>
+  <br><br>
+  <span >
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(147, 170, 103);background-image: url('download.jpg');background-size: cover;background-position: center;" class="btn" onclick="cat()"></button>
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(109, 78, 78);background-image: url('download (1).jpg');background-size: cover;background-position: center;" class="btn" onclick="dog()"></button>
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(91, 115, 146);background-image: url('download.png');background-size: cover;background-position: center;" class="btn" onclick="rabbit()"></button>
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(0, 0, 0);background-image: url('images.png');background-size: cover;background-position: center;" class="btn" onclick="m()"></button>
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(94, 139, 93);background-image: url('istockphoto-1081398784-612x612.jpg');background-size: cover;background-position: center;" class="btn" onclick="sun()"></button>
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(148, 167, 81);background-image: url('download\ \(2\).jpg');background-size: cover;background-position: center;" class="btn" onclick="c()"></button>
+  <button style="border-radius: 100px;height: 60px;width: 60px; border: solid rgb(138, 103, 63);background-image: url('download\ \(3\).jpg');background-size: cover;background-position: center;" class="btn" onclick="kc()"></button>
+  </span>
+  <br><br>
+  <h2 class="btn btn-success"><b>Select a fillter:-</b></h2>
+  <br><br>
+  <select name="fillters" id="f" class="form-control" style="width:30%">
+    <option value="r">RED</option>
+    <option value="b">BLUE</option>
+    <option value="g">GREY</option>
+  </select>
+  <br>
+  <button class="btn btn-info" onclick="submit()">Submit</button>
+  <br><br>
+  <button class="btn btn-danger" onclick="ta()">Take Selfie</button>
+</center>
+     <script src="main3.js"></script>
+</body>
+</html>
